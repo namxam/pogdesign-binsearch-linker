@@ -1,0 +1,7 @@
+a.binsearch-link {
+  display: block;
+  color: #FF9326 !important;
+  font-weight: normal !important; }
+
+td.today a.binsearch-link {
+  color: #333 !important; }

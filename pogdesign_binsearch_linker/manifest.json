@@ -1,0 +1,28 @@
+{
+  "name": "Pogdesign Binsearch Linker",
+  "version": "0.4",
+  "description": "Add binsearch links to tv series on pogdesign calendar",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "http://www.pogdesign.co.uk/cat/*"
+      ],
+      "css": [
+        "stylesheets/application.css"
+      ],
+      "js": [
+        "javascripts/jquery.js", 
+        "javascripts/application.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://www.pogdesign.co.uk/"
+  ]
+}
